@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    @@include("partials/head.html", {"pageTitle": "Shopper"})
+  </head>
+  <body>
+
+    <!-- MODALS -->
+    @@include("partials/modals.html")
+
+    <!-- NAVBAR -->
+    @@include("partials/navbar-topbar.html", {"classList": "bg-light"})
+
+    <!-- NAVBAR -->
+    @@include("partials/navbar.html", {"classList": "bg-white border-bottom"})
+
+    <!-- BREADCRUMB -->
+    <nav class="py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+
+            <!-- Breadcrumb -->
+            <ol class="breadcrumb mb-0 font-size-xs text-gray-400">
+              <li class="breadcrumb-item">
+                <a class="text-gray-400" href="index.html">Home</a>
+              </li>
+              <li class="breadcrumb-item active">
+                My Account
+              </li>
+            </ol>
+
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <!-- CONTENT -->
+    <section class="pt-7 pb-12">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+
+            <!-- Heading -->
+            <h3 class="mb-10">My Account</h3>
+
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-12 col-md-3">
+
+            <!-- Nav -->
+            @@include("partials/account-nav.html", {
+            "page": "account-payment.html"
+            })
+
+          </div>
+          <div class="col-12 col-md-9 col-lg-8 offset-lg-1">
+
+            <!-- Form -->
+            <form>
+
+              <!-- Card -->
+              <div class="form-group card card-sm border">
+                <div class="card-body">
+
+                  <!-- Radio -->
+                  <div class="custom-control custom-radio">
+
+                    <!-- Input -->
+                    <input class="custom-control-input collapsed" id="checkoutPaymentCard" name="payment" type="radio" checked>
+
+                    <!-- Label -->
+                    <label class="custom-control-label d-flex justify-content-between font-size-sm text-body text-nowrap" for="checkoutPaymentCard">
+                      I want to add Debit / Credit Card <img class="ml-2" src="assets/img/brands/color/cards.svg" alt="...">
+                    </label>
+
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Card -->
+              <div class="form-group card card-sm border">
+                <div class="card-body">
+
+                  <!-- Radio -->
+                  <div class="custom-control custom-radio">
+
+                    <!-- Input -->
+                    <input class="custom-control-input" id="checkoutPaymentPaypal" name="payment" type="radio">
+
+                    <!-- Label -->
+                    <label class="custom-control-label d-flex justify-content-between font-size-sm text-body text-nowrap" for="checkoutPaymentPaypal">
+                      I want to add PayPall <img src="assets/img/brands/color/paypal.svg" alt="...">
+                    </label>
+
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Button -->
+              <button class="btn btn-dark" type="submit">
+                Continue <i class="fe fe-arrow-right ml-2"></i>
+              </button>
+
+            </form>
+
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FOOTER -->
+    @@include("partials/footer.html")
+
+    <!-- JAVASCRIPT -->
+    @@include("partials/scripts.html")
+
+  </body>
+</html>

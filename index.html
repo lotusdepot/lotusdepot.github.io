@@ -361,7 +361,7 @@
                   <h5 class="text-uppercase text-danger mb-3 letter-spacing-5"> Special</h5>
                   <h2 class="mb-3">Connected Lemonatti</h2>
                   <p class="lead mb-4">The most popular sativa strain makes a comeback.<br>Check the THC on this one.</p>
-                  <p> <a class="btn btn-outline-dark" href="category.html">View collection</a></p>
+                  <p> <a class="btn btn-outline-dark" href="#jane">View collection</a></p>
                 </div>
               </div>
             </div>
@@ -375,7 +375,7 @@
                   <h5 class="text-uppercase text-info mb-3 letter-spacing-5"> Just arrived</h5>
                   <h2 class="mb-3">Blue Chip Drop</h2>
                   <p class="lead mb-4">All new flavors that your mind and body will savor.<br> Apricot Jelly and GOAT.</p>
-                  <p> <a class="btn btn-outline-dark" href="category.html">View collection                            </a></p>
+                  <p> <a class="btn btn-outline-dark" href="#jane">View collection                            </a></p>
                 </div>
               </div>
             </div>
@@ -389,7 +389,7 @@
                   <h5 class="text-uppercase text-muted mb-3 letter-spacing-5"> Special</h5>
                   <h2 class="mb-3">STIIIZY</h2>
                   <p class="lead mb-4">Try the newest strains from STIIIZY Labs. <br>Get your BIIIG battery today.</p>
-                  <p> <a class="btn btn-outline-dark" href="category.html">View collection</a></p>
+                  <p> <a class="btn btn-outline-dark" href="#jane">View collection</a></p>
                 </div>
               </div>
             </div>
@@ -398,7 +398,56 @@
       </div>
       <!-- /Circle Slider-->
     </section>
-    <section class="py-6">
+    
+    <section id="jane" class="py-6">
+<div>
+    <script id="jane-frame-script" src="https://api.iheartjane.com/v1/stores/1983/embed.js"></script>
+<!-- <script>
+       var getParams = function (url) {
+           var params = {};
+           var parser = document.createElement('a');
+           parser.href = url;
+           var query = parser.search.substring(1);
+           var vars = query.split('&');
+           for (var i = 0; i < vars.length; i++) {
+               var pair = vars[i].split('=');
+               if(pair.length > 2) {
+                   params[pair[0]] = decodeURIComponent(pair[1] + '=' + pair[2]);
+               }
+               else {
+                   params[pair[0]] = decodeURIComponent(pair[1]);
+               }
+           }
+           return params;
+       };
+       var baseURL = "https://www.iheartjane.com/embed/stores/117/";
+       var params = getParams('?path=menu');
+       if(params['path']){
+           console.log(params);
+           var newSrc = baseURL + params['path'];
+           document.getElementById('jane-menu').src = newSrc;
+       }
+   </script>-->
+ </div>
+    </section>
+
+
+   <section id="sale" class="bg-danger">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-white text-center py-7">
+            <h2 class="display-4 text-uppercase mb-4">Stoner Sales</h2>
+            <p class="mb-0">Up to</p>
+            <h2 class="display-1 fw-bold mb-3">30%</h2>
+            <p class="mb-5">* Free shipping on orders over $100.</p>
+            <p><a class="btn btn-outline-light" href="#">Shop now</a></p>
+          </div>
+          <div class="col-lg-6" style="background: right bottom url(img/bmints.png) no-repeat; background-size: contain;"></div>
+        </div>
+      </div>
+    </section>
+
+<!-- <section id="recommended" class="py-6">
       <div class="container">
         <div class="row">
           <div class="col-xl-8 mb-5">
@@ -459,194 +508,10 @@
           </div>
         </div>
       </div>
-    </section>
-    <section class="bg-danger">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-6 text-white text-center py-7">
-            <h2 class="display-4 text-uppercase mb-4">Final sales</h2>
-            <p class="mb-0">Up to</p>
-            <h2 class="display-1 fw-bold mb-3">70%</h2>
-            <p class="mb-5">* Free shipping on orders over $70.</p>
-            <p><a class="btn btn-outline-light" href="#">Shop now</a></p>
-          </div>
-          <div class="col-lg-6" style="background: right bottom url(img/photo/sale-circle.jpg) no-repeat; background-size: contain;"></div>
-        </div>
-      </div>
-    </section>
-    <section class="jane-menu">
-<div>
-   <script id="jane-frame-script" src="https://api.iheartjane.com/v1/stores/117/embed.js"></script><br />
-   <script>
-       var getParams = function (url) {
-           var params = {};
-           var parser = document.createElement('a');
-           parser.href = url;
-           var query = parser.search.substring(1);
-           var vars = query.split('&');
-           for (var i = 0; i < vars.length; i++) {
-               var pair = vars[i].split('=');
-               if(pair.length > 2) {
-                   params[pair[0]] = decodeURIComponent(pair[1] + '=' + pair[2]);
-               }
-               else {
-                   params[pair[0]] = decodeURIComponent(pair[1]);
-               }
-           }
-           return params;
-       };
-       var baseURL = "https://www.iheartjane.com/embed/stores/117/";
-       var params = getParams('?path=menu');
-       if(params['path']){
-           console.log(params);
-           var newSrc = baseURL + params['path'];
-           document.getElementById('jane-menu').src = newSrc;
-       }
-   </script>
-</div>
-    </section>
-    <section class="py-6">
-      <div class="container">
-        <div class="row">
-          <div class="col-xl-8 mx-auto text-center mb-5">
-            <h3 class="text-uppercase">Last viewed products</h3>
-          </div>
-        </div>
-        <!-- Products Slider-->
-        <div class="owl-carousel owl-theme product-slider">
-          <!-- product-->
-          <div class="product-slider-item">
-            <div class="product">
-              <div class="product-image"><img class="img-fluid" src="img/product/serrah-galos-494231-unsplash.jpg" alt="product"/>
-                <div class="product-hover-overlay"><a class="product-hover-overlay-link" href="detail.html"></a>
-                  <div class="product-hover-overlay-buttons"><a class="btn btn-dark btn-buy" href="detail.html"><i class="fa-search fa"></i><span class="btn-buy-label ms-2">View</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="py-2">
-                <p class="text-muted text-sm mb-1">Jackets</p>
-                <h3 class="h6 text-uppercase mb-1"><a class="text-dark" href="detail.html">Striped T-Shirt</a></h3><span class="text-muted">$40.00</span>
-              </div>
-            </div>
-          </div>
-          <!-- /product-->
-          <!-- product-->
-          <div class="product-slider-item">
-            <div class="product">
-              <div class="product-image"><img class="img-fluid" src="img/product/averie-woodard-319832-unsplash.jpg" alt="product"/>
-                <div class="product-hover-overlay"><a class="product-hover-overlay-link" href="detail.html"></a>
-                  <div class="product-hover-overlay-buttons"><a class="btn btn-dark btn-buy" href="detail.html"><i class="fa-search fa"></i><span class="btn-buy-label ms-2">View</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="py-2">
-                <p class="text-muted text-sm mb-1">Shirts</p>
-                <h3 class="h6 text-uppercase mb-1"><a class="text-dark" href="detail.html">Short top</a></h3><span class="text-muted">$40.00</span>
-              </div>
-            </div>
-          </div>
-          <!-- /product-->
-          <!-- product-->
-          <div class="product-slider-item">
-            <div class="product">
-              <div class="product-image">
-                <div class="ribbon ribbon-danger">Sold out</div><img class="img-fluid" src="img/product/serrah-galos-494279-unsplash.jpg" alt="product"/>
-                <div class="product-hover-overlay"><a class="product-hover-overlay-link" href="detail.html"></a>
-                  <div class="product-hover-overlay-buttons"><a class="btn btn-dark btn-buy" href="detail.html"><i class="fa-search fa"></i><span class="btn-buy-label ms-2">View</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="py-2">
-                <p class="text-muted text-sm mb-1">Sweaters</p>
-                <h3 class="h6 text-uppercase mb-1"><a class="text-dark" href="detail.html">Ethnic Sweater</a></h3><span class="text-muted">$40.00</span>
-              </div>
-            </div>
-          </div>
-          <!-- /product-->
-          <!-- product-->
-          <div class="product-slider-item">
-            <div class="product">
-              <div class="product-image"><img class="img-fluid" src="img/product/dmitriy-ilkevich-437760-unsplash.jpg" alt="product"/>
-                <div class="product-hover-overlay"><a class="product-hover-overlay-link" href="detail.html"></a>
-                  <div class="product-hover-overlay-buttons"><a class="btn btn-dark btn-buy" href="detail.html"><i class="fa-search fa"></i><span class="btn-buy-label ms-2">View</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="py-2">
-                <p class="text-muted text-sm mb-1">Coats</p>
-                <h3 class="h6 text-uppercase mb-1"><a class="text-dark" href="detail.html">Beige</a></h3><span class="text-muted">$40.00</span>
-              </div>
-            </div>
-          </div>
-          <!-- /product-->
-          <!-- product-->
-          <div class="product-slider-item">
-            <div class="product">
-              <div class="product-image"><img class="img-fluid" src="img/product/ian-dooley-347968-unsplash.jpg" alt="product"/>
-                <div class="product-hover-overlay"><a class="product-hover-overlay-link" href="detail.html"></a>
-                  <div class="product-hover-overlay-buttons"><a class="btn btn-dark btn-buy" href="detail.html"><i class="fa-search fa"></i><span class="btn-buy-label ms-2">View</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="py-2">
-                <p class="text-muted text-sm mb-1">T-Shirts</p>
-                <h3 class="h6 text-uppercase mb-1"><a class="text-dark" href="detail.html">Skull Tee</a></h3><span class="text-muted">$40.00</span>
-              </div>
-            </div>
-          </div>
-          <!-- /product-->
-          <!-- product-->
-          <div class="product-slider-item">
-            <div class="product">
-              <div class="product-image"><img class="img-fluid" src="img/product/alex-holyoake-571682-unsplash.jpg" alt="product"/>
-                <div class="product-hover-overlay"><a class="product-hover-overlay-link" href="detail.html"></a>
-                  <div class="product-hover-overlay-buttons"><a class="btn btn-dark btn-buy" href="detail.html"><i class="fa-search fa"></i><span class="btn-buy-label ms-2">View</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="py-2">
-                <p class="text-muted text-sm mb-1">Denim</p>
-                <h3 class="h6 text-uppercase mb-1"><a class="text-dark" href="detail.html">Trucker jacket</a></h3><span class="text-muted">$40.00</span>
-              </div>
-            </div>
-          </div>
-          <!-- /product-->
-          <!-- product-->
-          <div class="product-slider-item">
-            <div class="product">
-              <div class="product-image"><img class="img-fluid" src="img/product/ao-456813-unsplash.jpg" alt="product"/>
-                <div class="product-hover-overlay"><a class="product-hover-overlay-link" href="detail.html"></a>
-                  <div class="product-hover-overlay-buttons"><a class="btn btn-dark btn-buy" href="detail.html"><i class="fa-search fa"></i><span class="btn-buy-label ms-2">View</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="py-2">
-                <p class="text-muted text-sm mb-1">Denim</p>
-                <h3 class="h6 text-uppercase mb-1"><a class="text-dark" href="detail.html">Blouse</a></h3><span class="text-muted">$40.00</span>
-              </div>
-            </div>
-          </div>
-          <!-- /product-->
-          <!-- product-->
-          <div class="product-slider-item">
-            <div class="product">
-              <div class="product-image"><img class="img-fluid" src="img/product/kyle-loftus-592041-unsplash.jpg" alt="product"/>
-                <div class="product-hover-overlay"><a class="product-hover-overlay-link" href="detail.html"></a>
-                  <div class="product-hover-overlay-buttons"><a class="btn btn-dark btn-buy" href="detail.html"><i class="fa-search fa"></i><span class="btn-buy-label ms-2">View</span></a>
-                  </div>
-                </div>
-              </div>
-              <div class="py-2">
-                <p class="text-muted text-sm mb-1">Denim</p>
-                <h3 class="h6 text-uppercase mb-1"><a class="text-dark" href="detail.html">Shirt</a></h3><span class="text-muted">$40.00</span>
-              </div>
-            </div>
-          </div>
-          <!-- /product-->
-        </div>
-      </div>
-    </section>
-    <!-- Footer-->
+    </section> -->
+    
+
+     <!-- Footer-->
     <footer class="main-footer">
       <!-- Services block-->
       <div class="bg-gray-100 text-dark-700 py-6">
@@ -675,7 +540,7 @@
                 <use xlink:href="#customer-support-1"> </use>
               </svg>
               <div class="service-text">
-                <h6 class="text-uppercase">020-800-456-747</h6>
+                <h6 class="text-uppercase">408-456-0420</h6>
                 <p class="text-muted fw-light text-sm mb-0">24/7 Available Support</p>
               </div>
             </div>
@@ -687,8 +552,8 @@
         <div class="container">
           <div class="row">
             <div class="col-lg-4 mb-5 mb-lg-0">
-              <div class="fw-bold text-uppercase text-lg text-dark mb-3">Sell<span class="text-primary">.</span></div>
-              <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+              <div class="fw-bold text-uppercase text-lg text-dark mb-3">Purple Lotus <span class="text-primary">Bulk Menu</span></div>
+              <p>A wholesale cannabis for the connoisseur, a bulk discount deal for the savvy sativa savant.</p>
               <ul class="list-inline">
                 <li class="list-inline-item"><a class="text-muted text-primary-hover" href="#" target="_blank" title="twitter"><i class="fab fa-twitter"></i></a></li>
                 <li class="list-inline-item"><a class="text-muted text-primary-hover" href="#" target="_blank" title="facebook"><i class="fab fa-facebook"></i></a></li>
@@ -700,14 +565,11 @@
             <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
               <h6 class="text-uppercase text-dark mb-3">Shop</h6>
               <ul class="list-unstyled">
-                <li> <a class="text-muted" href="#">For Women</a></li>
-                <li> <a class="text-muted" href="#">For Men</a></li>
-                <li> <a class="text-muted" href="#">Stores</a></li>
-                <li> <a class="text-muted" href="#">Our Blog</a></li>
-                <li> <a class="text-muted" href="#">Shop</a></li>
+                <li> <a class="text-muted" href="#jane">Bulk Menu</a></li>
+                <li> <a class="text-muted" href="#recommended">Customer Recommendations</a></li>
               </ul>
             </div>
-            <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
+<!--             <div class="col-lg-2 col-md-6 mb-5 mb-lg-0">
               <h6 class="text-uppercase text-dark mb-3">Company</h6>
               <ul class="list-unstyled">
                 <li> <a class="text-muted" href="#">Login                    </a></li>
@@ -716,13 +578,15 @@
                 <li> <a class="text-muted" href="#">Our Products                    </a></li>
                 <li> <a class="text-muted" href="#">Checkouts                    </a></li>
               </ul>
-            </div>
+            </div> -->
             <div class="col-lg-4">
               <h6 class="text-uppercase text-dark mb-3">Daily Offers & Discounts</h6>
-              <p class="mb-3"> Lorem ipsum dolor sit amet, consectetur adipisicing elit. At itaque temporibus.</p>
-              <form action="#" id="newsletter-form">
+              <p class="mb-3"> We are always announcing new deals; the best way to be in the know is to sign up with your email. We won't spam you, we promise.</p>
+          <form
+  action="https://formspree.io/f/xdoyvapq"
+  method="POST">
                 <div class="input-group mb-3">
-                  <input class="form-control bg-transparent border-secondary border-end-0" type="email" placeholder="Your Email Address" aria-label="Your Email Address">
+                  <input class="form-control bg-transparent border-secondary border-end-0" type="email" placeholder="Your Email Address" aria-label="Your Email Address" name="_replyto">
                   <div class="input-group-append">
                     <button class="btn btn-outline-secondary border-start-0" type="submit"> <i class="fa fa-paper-plane text-lg text-dark"></i></button>
                   </div>
@@ -737,14 +601,14 @@
         <div class="container">
           <div class="row align-items-center">
             <div class="col-md-6 text-center text-md-start">
-              <p class="mb-md-0">&copy; 2020 Your company.  All rights reserved.</p>
+              <p class="mb-md-0">&copy; 2021 Purple Lotus.  All rights reserved.</p>
             </div>
             <div class="col-md-6">
               <ul class="list-inline mb-0 mt-2 mt-md-0 text-center text-md-end">
-                <li class="list-inline-item"><img class="w-2rem" src="img/visa.svg" alt="..."></li>
-                <li class="list-inline-item"><img class="w-2rem" src="img/mastercard.svg" alt="..."></li>
-                <li class="list-inline-item"><img class="w-2rem" src="img/paypal.svg" alt="..."></li>
-                <li class="list-inline-item"><img class="w-2rem" src="img/western-union.svg" alt="..."></li>
+                <!-- <li class="list-inline-item"><img class="w-2rem" src="img/visa.svg" alt="..."></li> -->
+                <!-- <li class="list-inline-item"><img class="w-2rem" src="img/mastercard.svg" alt="..."></li> -->
+                <li class="list-inline-item"><img class="w3-round" src="img/treezpay.png" alt="..."></li>
+                <!-- <li class="list-inline-item"><img class="w-2rem" src="img/western-union.svg" alt="..."></li> -->
               </ul>
             </div>
           </div>
